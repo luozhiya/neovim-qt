@@ -944,7 +944,7 @@ void Shell::handleSetOption(const QVariantList& opargs)
 	const QVariant& value{ opargs.at(1) };
 
 	if (name == "guifont") {
-		setGuiFont(value.toString(), false /*force*/);
+		setGuiFont(value.toString(), true /*force*/);
 	} else if (name == "guifontwide") {
 		handleGuiFontWide(value);
 	} else if (name == "linespace") {
